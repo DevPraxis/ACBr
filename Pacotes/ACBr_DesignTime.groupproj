@@ -1,0 +1,264 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{BD342CE2-A8F5-48E3-8542-26D8F109E0AB}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\..\FortesReport_Custom\Packages\dclFrce.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\ACBrComum\DCLACBr_Comum.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\ACBrDiversos\DCLACBr_Diversos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\ACBrIntegrador\DCLACBr_Integrador.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\ACBrSerial\DCLACBr_Serial.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\ACBrTXT\ACBrPonto\DCLACBr_Ponto.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\ACBrTXT\ACBrSPED\DCLACBr_SPED.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\ACBrBoleto\DCLACBr_Boleto.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\ACBrTCP\DCLACBr_TCP.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\ACBrDFe\DCLACBr_DFeComum.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\ACBrDFe\ACBrCTe\DCLACBr_CTe.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\ACBrDFe\ACBrCTe\DACTE\Fortes\DCLACBr_CTeDacteRL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\ACBrDFe\ACBrNFe\DCLACBr_NFe.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\DCLACBr_NFeDanfeRL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\ACBrDFe\ACBrMDFe\DCLACBr_MDFe.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\ACBrDFe\ACBrMDFe\DAMDFE\Fortes\DCLACBr_MDFeDamdfeRL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\ACBrDFe\ACBrNFSe\DCLACBr_NFSe.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\ACBrDFe\ACBrNFSe\DANFSE\Fortes\DCLACBr_NFSeDanfseRL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\ACBrDFe\ACBrANe\DCLACBr_ANe.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\ACBrDFe\ACBrNFe\DANFE\NFCe\EscPos\DCLACBr_NFeDanfeESCPOS.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="dclFrce">
+        <MSBuild Projects="..\..\FortesReport_Custom\Packages\dclFrce.dproj"/>
+    </Target>
+    <Target Name="dclFrce:Clean">
+        <MSBuild Projects="..\..\FortesReport_Custom\Packages\dclFrce.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dclFrce:Make">
+        <MSBuild Projects="..\..\FortesReport_Custom\Packages\dclFrce.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCLACBr_Comum">
+        <MSBuild Projects="Delphi\ACBrComum\DCLACBr_Comum.dproj"/>
+    </Target>
+    <Target Name="DCLACBr_Comum:Clean">
+        <MSBuild Projects="Delphi\ACBrComum\DCLACBr_Comum.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCLACBr_Comum:Make">
+        <MSBuild Projects="Delphi\ACBrComum\DCLACBr_Comum.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCLACBr_Diversos">
+        <MSBuild Projects="Delphi\ACBrDiversos\DCLACBr_Diversos.dproj"/>
+    </Target>
+    <Target Name="DCLACBr_Diversos:Clean">
+        <MSBuild Projects="Delphi\ACBrDiversos\DCLACBr_Diversos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCLACBr_Diversos:Make">
+        <MSBuild Projects="Delphi\ACBrDiversos\DCLACBr_Diversos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCLACBr_Integrador">
+        <MSBuild Projects="Delphi\ACBrIntegrador\DCLACBr_Integrador.dproj"/>
+    </Target>
+    <Target Name="DCLACBr_Integrador:Clean">
+        <MSBuild Projects="Delphi\ACBrIntegrador\DCLACBr_Integrador.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCLACBr_Integrador:Make">
+        <MSBuild Projects="Delphi\ACBrIntegrador\DCLACBr_Integrador.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCLACBr_Serial">
+        <MSBuild Projects="Delphi\ACBrSerial\DCLACBr_Serial.dproj"/>
+    </Target>
+    <Target Name="DCLACBr_Serial:Clean">
+        <MSBuild Projects="Delphi\ACBrSerial\DCLACBr_Serial.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCLACBr_Serial:Make">
+        <MSBuild Projects="Delphi\ACBrSerial\DCLACBr_Serial.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCLACBr_Ponto">
+        <MSBuild Projects="Delphi\ACBrTXT\ACBrPonto\DCLACBr_Ponto.dproj"/>
+    </Target>
+    <Target Name="DCLACBr_Ponto:Clean">
+        <MSBuild Projects="Delphi\ACBrTXT\ACBrPonto\DCLACBr_Ponto.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCLACBr_Ponto:Make">
+        <MSBuild Projects="Delphi\ACBrTXT\ACBrPonto\DCLACBr_Ponto.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCLACBr_SPED">
+        <MSBuild Projects="Delphi\ACBrTXT\ACBrSPED\DCLACBr_SPED.dproj"/>
+    </Target>
+    <Target Name="DCLACBr_SPED:Clean">
+        <MSBuild Projects="Delphi\ACBrTXT\ACBrSPED\DCLACBr_SPED.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCLACBr_SPED:Make">
+        <MSBuild Projects="Delphi\ACBrTXT\ACBrSPED\DCLACBr_SPED.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCLACBr_Boleto">
+        <MSBuild Projects="Delphi\ACBrBoleto\DCLACBr_Boleto.dproj"/>
+    </Target>
+    <Target Name="DCLACBr_Boleto:Clean">
+        <MSBuild Projects="Delphi\ACBrBoleto\DCLACBr_Boleto.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCLACBr_Boleto:Make">
+        <MSBuild Projects="Delphi\ACBrBoleto\DCLACBr_Boleto.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCLACBr_TCP">
+        <MSBuild Projects="Delphi\ACBrTCP\DCLACBr_TCP.dproj"/>
+    </Target>
+    <Target Name="DCLACBr_TCP:Clean">
+        <MSBuild Projects="Delphi\ACBrTCP\DCLACBr_TCP.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCLACBr_TCP:Make">
+        <MSBuild Projects="Delphi\ACBrTCP\DCLACBr_TCP.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCLACBr_DFeComum">
+        <MSBuild Projects="Delphi\ACBrDFe\DCLACBr_DFeComum.dproj"/>
+    </Target>
+    <Target Name="DCLACBr_DFeComum:Clean">
+        <MSBuild Projects="Delphi\ACBrDFe\DCLACBr_DFeComum.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCLACBr_DFeComum:Make">
+        <MSBuild Projects="Delphi\ACBrDFe\DCLACBr_DFeComum.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCLACBr_CTe">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrCTe\DCLACBr_CTe.dproj"/>
+    </Target>
+    <Target Name="DCLACBr_CTe:Clean">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrCTe\DCLACBr_CTe.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCLACBr_CTe:Make">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrCTe\DCLACBr_CTe.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCLACBr_CTeDacteRL">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrCTe\DACTE\Fortes\DCLACBr_CTeDacteRL.dproj"/>
+    </Target>
+    <Target Name="DCLACBr_CTeDacteRL:Clean">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrCTe\DACTE\Fortes\DCLACBr_CTeDacteRL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCLACBr_CTeDacteRL:Make">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrCTe\DACTE\Fortes\DCLACBr_CTeDacteRL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCLACBr_NFe">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrNFe\DCLACBr_NFe.dproj"/>
+    </Target>
+    <Target Name="DCLACBr_NFe:Clean">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrNFe\DCLACBr_NFe.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCLACBr_NFe:Make">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrNFe\DCLACBr_NFe.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCLACBr_NFeDanfeRL">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\DCLACBr_NFeDanfeRL.dproj"/>
+    </Target>
+    <Target Name="DCLACBr_NFeDanfeRL:Clean">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\DCLACBr_NFeDanfeRL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCLACBr_NFeDanfeRL:Make">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\DCLACBr_NFeDanfeRL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCLACBr_MDFe">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrMDFe\DCLACBr_MDFe.dproj"/>
+    </Target>
+    <Target Name="DCLACBr_MDFe:Clean">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrMDFe\DCLACBr_MDFe.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCLACBr_MDFe:Make">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrMDFe\DCLACBr_MDFe.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCLACBr_MDFeDamdfeRL">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrMDFe\DAMDFE\Fortes\DCLACBr_MDFeDamdfeRL.dproj"/>
+    </Target>
+    <Target Name="DCLACBr_MDFeDamdfeRL:Clean">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrMDFe\DAMDFE\Fortes\DCLACBr_MDFeDamdfeRL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCLACBr_MDFeDamdfeRL:Make">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrMDFe\DAMDFE\Fortes\DCLACBr_MDFeDamdfeRL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCLACBr_NFSe">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrNFSe\DCLACBr_NFSe.dproj"/>
+    </Target>
+    <Target Name="DCLACBr_NFSe:Clean">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrNFSe\DCLACBr_NFSe.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCLACBr_NFSe:Make">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrNFSe\DCLACBr_NFSe.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCLACBr_NFSeDanfseRL">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrNFSe\DANFSE\Fortes\DCLACBr_NFSeDanfseRL.dproj"/>
+    </Target>
+    <Target Name="DCLACBr_NFSeDanfseRL:Clean">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrNFSe\DANFSE\Fortes\DCLACBr_NFSeDanfseRL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCLACBr_NFSeDanfseRL:Make">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrNFSe\DANFSE\Fortes\DCLACBr_NFSeDanfseRL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCLACBr_ANe">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrANe\DCLACBr_ANe.dproj"/>
+    </Target>
+    <Target Name="DCLACBr_ANe:Clean">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrANe\DCLACBr_ANe.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCLACBr_ANe:Make">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrANe\DCLACBr_ANe.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DCLACBr_NFeDanfeESCPOS">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrNFe\DANFE\NFCe\EscPos\DCLACBr_NFeDanfeESCPOS.dproj"/>
+    </Target>
+    <Target Name="DCLACBr_NFeDanfeESCPOS:Clean">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrNFe\DANFE\NFCe\EscPos\DCLACBr_NFeDanfeESCPOS.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DCLACBr_NFeDanfeESCPOS:Make">
+        <MSBuild Projects="Delphi\ACBrDFe\ACBrNFe\DANFE\NFCe\EscPos\DCLACBr_NFeDanfeESCPOS.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="dclFrce;DCLACBr_Comum;DCLACBr_Diversos;DCLACBr_Integrador;DCLACBr_Serial;DCLACBr_Ponto;DCLACBr_SPED;DCLACBr_Boleto;DCLACBr_TCP;DCLACBr_DFeComum;DCLACBr_CTe;DCLACBr_CTeDacteRL;DCLACBr_NFe;DCLACBr_NFeDanfeRL;DCLACBr_MDFe;DCLACBr_MDFeDamdfeRL;DCLACBr_NFSe;DCLACBr_NFSeDanfseRL;DCLACBr_ANe;DCLACBr_NFeDanfeESCPOS"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="dclFrce:Clean;DCLACBr_Comum:Clean;DCLACBr_Diversos:Clean;DCLACBr_Integrador:Clean;DCLACBr_Serial:Clean;DCLACBr_Ponto:Clean;DCLACBr_SPED:Clean;DCLACBr_Boleto:Clean;DCLACBr_TCP:Clean;DCLACBr_DFeComum:Clean;DCLACBr_CTe:Clean;DCLACBr_CTeDacteRL:Clean;DCLACBr_NFe:Clean;DCLACBr_NFeDanfeRL:Clean;DCLACBr_MDFe:Clean;DCLACBr_MDFeDamdfeRL:Clean;DCLACBr_NFSe:Clean;DCLACBr_NFSeDanfseRL:Clean;DCLACBr_ANe:Clean;DCLACBr_NFeDanfeESCPOS:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="dclFrce:Make;DCLACBr_Comum:Make;DCLACBr_Diversos:Make;DCLACBr_Integrador:Make;DCLACBr_Serial:Make;DCLACBr_Ponto:Make;DCLACBr_SPED:Make;DCLACBr_Boleto:Make;DCLACBr_TCP:Make;DCLACBr_DFeComum:Make;DCLACBr_CTe:Make;DCLACBr_CTeDacteRL:Make;DCLACBr_NFe:Make;DCLACBr_NFeDanfeRL:Make;DCLACBr_MDFe:Make;DCLACBr_MDFeDamdfeRL:Make;DCLACBr_NFSe:Make;DCLACBr_NFSeDanfseRL:Make;DCLACBr_ANe:Make;DCLACBr_NFeDanfeESCPOS:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
