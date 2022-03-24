@@ -15,7 +15,7 @@ package ACBr_Serial;
 {$OPTIMIZATION OFF}
 {$OVERFLOWCHECKS OFF}
 {$RANGECHECKS OFF}
-{$REFERENCEINFO ON}
+{$DEFINITIONINFO ON}
 {$SAFEDIVIDE OFF}
 {$STACKFRAMES ON}
 {$TYPEDADDRESS OFF}
@@ -33,7 +33,8 @@ requires
   rtl,
   vcl,
   ACBr_Diversos,
-  ACBr_OpenSSL;
+  ACBr_OpenSSL,
+  ACBr_Comum;
 
 contains
   ACBrBAL in '..\..\..\Fontes\ACBrSerial\ACBrBAL.pas',
@@ -64,7 +65,6 @@ contains
   ACBrBALToledoBCS21 in '..\..\..\Fontes\ACBrSerial\ACBrBALToledoBCS21.pas',
   ACBrBALPrecision in '..\..\..\Fontes\ACBrSerial\ACBrBALPrecision.pas',
   ACBrBALDigitron_UL in '..\..\..\Fontes\ACBrSerial\ACBrBALDigitron_UL.pas',
-  ACBrBALCapital in '..\..\..\Fontes\ACBrSerial\ACBrBALCapital.pas',
   ACBrCHQ in '..\..\..\Fontes\ACBrSerial\ACBrCHQ.pas',
   ACBrCHQBematech in '..\..\..\Fontes\ACBrSerial\ACBrCHQBematech.pas',
   ACBrCHQChronos in '..\..\..\Fontes\ACBrSerial\ACBrCHQChronos.pas',
@@ -116,7 +116,6 @@ contains
   ACBrETQPpla in '..\..\..\Fontes\ACBrSerial\ACBrETQPpla.pas',
   ACBrETQEpl2 in '..\..\..\Fontes\ACBrSerial\ACBrETQEpl2.pas',
   ACBrETQZplII in '..\..\..\Fontes\ACBrSerial\ACBrETQZplII.pas',
-  ACBrETQEscLabel in '..\..\..\Fontes\ACBrSerial\ACBrETQEscLabel.pas',
   ACBrGAV in '..\..\..\Fontes\ACBrSerial\ACBrGAV.pas',
   ACBrGAVClass in '..\..\..\Fontes\ACBrSerial\ACBrGAVClass.pas',
   ACBrGAVImpressoraComum in '..\..\..\Fontes\ACBrSerial\ACBrGAVImpressoraComum.pas',
@@ -147,10 +146,20 @@ contains
   ACBrEscPosStar in '..\..\..\Fontes\ACBrSerial\ACBrEscPosStar.pas',
   ACBrEscZJiang in '..\..\..\Fontes\ACBrSerial\ACBrEscZJiang.pas',
   ACBrEscGPrinter in '..\..\..\Fontes\ACBrSerial\ACBrEscGPrinter.pas',
-  ACBrEscDatecs in '..\..\..\Fontes\ACBrSerial\ACBrEscDatecs.pas',
   ACBrEscPosHook in '..\..\..\Fontes\ACBrSerial\ACBrEscPosHook.pas',
   ACBrEscPosHookEpsonDLL in '..\..\..\Fontes\ACBrSerial\ACBrEscPosHookEpsonDLL.pas',
   ACBrEscPosHookElginDLL in '..\..\..\Fontes\ACBrSerial\ACBrEscPosHookElginDLL.pas',
-  ACBrWinUSBDevice in '..\..\..\Fontes\ACBrSerial\ACBrWinUSBDevice.pas';
+  ACBrWinUSBDevice in '..\..\..\Fontes\ACBrSerial\ACBrWinUSBDevice.pas',
+  ACBrDeviceBlueTooth in '..\..\..\Fontes\ACBrSerial\ACBrDeviceBlueTooth.pas',
+  ACBrBALLibratekWT3000IR in '..\..\..\Fontes\ACBrSerial\ACBrBALLibratekWT3000IR.pas',
+  ACBrBALToledoTi420 in '..\..\..\Fontes\ACBrSerial\ACBrBALToledoTi420.pas',
+  ACBrEscDatecs in '..\..\..\Fontes\ACBrSerial\ACBrEscDatecs.pas',
+  ACBrBALWeightechWT27R_ETH in '..\..\..\Fontes\ACBrSerial\ACBrBALWeightechWT27R_ETH.pas',
+  ACBrBALCapital in '..\..\..\Fontes\ACBrSerial\ACBrBALCapital.pas',
+  ACBrBALMarte in '..\..\..\Fontes\ACBrSerial\ACBrBALMarte.pas',
+  ACBrCHQMenno in '..\..\..\Fontes\ACBrSerial\ACBrCHQMenno.pas',
+  ACBrBALLenkeLK2500 in '..\..\..\Fontes\ACBrSerial\ACBrBALLenkeLK2500.pas',
+  ACBrBALWeighTRUTest in '..\..\..\Fontes\ACBrSerial\ACBrBALWeighTRUTest.pas',
+  ACBrETQEscLabel in '..\..\..\Fontes\ACBrSerial\ACBrETQEscLabel.pas';
 
 end.

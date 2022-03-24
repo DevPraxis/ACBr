@@ -25,7 +25,7 @@ package DCLACBr_NFeDanfeESCPOS;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'ACBr - (design-time) DANFe para NFC-e Impressora Serial - (http://www.projetoacbr.com.br/)'}
+{$DESCRIPTION 'ACBr - (DesignTime) DANFe para NFC-e Impressora Serial - (http://www.projetoacbr.com.br/)'}
 {$DESIGNONLY}
 {$IMPLICITBUILD ON}
 
@@ -34,6 +34,6 @@ requires
   ACBr_NFeDanfeESCPOS;
 
 contains
-  ACBrNFeDANFeESCPOSReg in '..\..\..\..\..\..\..\Fontes\ACBrDFe\ACBrNFe\DANFE\NFCe\EscPos\ACBrNFeDANFeESCPOSReg.pas';
+  ACBrNFeDANFeESCPOSReg in '..\..\..\..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrNFe\DANFE\NFCe\EscPos\ACBrNFeDANFeESCPOSReg.pas';
 
 end.

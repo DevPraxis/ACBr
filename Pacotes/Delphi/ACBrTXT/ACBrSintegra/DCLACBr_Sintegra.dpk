@@ -1,6 +1,7 @@
 package DCLACBr_Sintegra;
 
 {$R *.res}
+{$R *.otares}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
@@ -25,7 +26,7 @@ package DCLACBr_Sintegra;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'ACBr - (design-time) Sintegra - (http://www.projectoacbr.com.br/)'}
+{$DESCRIPTION 'ACBr - (DesignTime) Sintegra (http://www.projectoacbr.com.br/)'}
 {$DESIGNONLY}
 {$IMPLICITBUILD OFF}
 
@@ -34,6 +35,6 @@ requires
   ACBr_Sintegra;
 
 contains
-  ACBrSintegraReg in '..\..\..\..\Fontes\ACBrTXT\ACBrSintegra\ACBrSintegraReg.pas';
+  ACBrSintegraReg in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrSintegra\ACBrSintegraReg.pas';
 
 end.

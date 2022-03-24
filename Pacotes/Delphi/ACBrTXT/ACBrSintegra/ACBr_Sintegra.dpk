@@ -1,6 +1,7 @@
 package ACBr_Sintegra;
 
 {$R *.res}
+{$R *.otares}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
@@ -15,7 +16,7 @@ package ACBr_Sintegra;
 {$OPTIMIZATION OFF}
 {$OVERFLOWCHECKS OFF}
 {$RANGECHECKS OFF}
-{$REFERENCEINFO ON}
+{$DEFINITIONINFO ON}
 {$SAFEDIVIDE OFF}
 {$STACKFRAMES ON}
 {$TYPEDADDRESS OFF}
@@ -35,6 +36,6 @@ requires
   ACBr_TXTComum;
 
 contains
-  ACBrSintegra in '..\..\..\..\Fontes\ACBrTXT\ACBrSintegra\ACBrSintegra.pas';
+  ACBrSintegra in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrSintegra\ACBrSintegra.pas';
 
 end.

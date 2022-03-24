@@ -1,6 +1,7 @@
 package DCLACBr_SEF2;
 
 {$R *.res}
+{$R *.otares}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
@@ -25,7 +26,7 @@ package DCLACBr_SEF2;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'ACBr - (design-time) SEF2 (eDoc e SEF) - (http://www.projetoacbr.com.br/)'}
+{$DESCRIPTION 'ACBr - SEF2 (DesignTime) (eDoc e SEF) - (http://www.projetoacbr.com.br/)'}
 {$DESIGNONLY}
 {$IMPLICITBUILD OFF}
 
@@ -34,6 +35,6 @@ requires
   ACBr_SEF2;
 
 contains
-  ACBrSEF2Reg in '..\..\..\..\Fontes\ACBrTXT\ACBrSEF2\ACBrSEF2Reg.pas';
+  ACBrSEF2Reg in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrSEF2\ACBrSEF2Reg.pas';
 
 end.

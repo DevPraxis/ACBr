@@ -35,7 +35,6 @@ requires
 
 contains
   OpenSSLExt in '..\..\..\Fontes\ACBrOpenSSL\OpenSSLExt.pas',
-  ACBrOpenSSLUtils in '..\..\..\Fontes\ACBrOpenSSL\ACBrOpenSSLUtils.pas',
   ACBrEAD in '..\..\..\Fontes\ACBrOpenSSL\ACBrEAD.pas';
 
 end.

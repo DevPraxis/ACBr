@@ -25,9 +25,9 @@ package DCLACBr_NFSe;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'ACBr - (design-time) Nota Fiscal de Serviço Eletrônica - (http://www.projetoacbr.com.br/)'}
+{$DESCRIPTION 'ACBr - (DesignTime) Nota Fiscal de Serviço Eletrônica - (http://www.projetoacbr.com.br/)'}
 {$DESIGNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl,
@@ -36,6 +36,6 @@ requires
   DCLACBr_Comum;
 
 contains
-  ACBrNFSeReg in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\ACBrNFSeReg.pas';
+  ACBrNFSeReg in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrNFSe\ACBrNFSeReg.pas';
 
 end.

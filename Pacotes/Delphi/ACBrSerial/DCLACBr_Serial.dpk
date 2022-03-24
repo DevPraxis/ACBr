@@ -25,7 +25,7 @@ package DCLACBr_Serial;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'ACBr - (design-time) ECF, Balanças, Cheques, Displays, Etiquetas, Gavetas, Terminais, SMS, RFD, Leitores - (http://www.projetoacbr.com.br/)'}
+{$DESCRIPTION 'ACBr - (DesignTime) ECF, Balanças, Cheques, Displays, Etiquetas, Gavetas, Terminais, SMS, RFD, Leitores - (http://www.projetoacbr.com.br/)'}
 {$DESIGNONLY}
 {$IMPLICITBUILD OFF}
 
@@ -36,6 +36,7 @@ requires
   DCLACBr_Comum;
 
 contains
-  ACBrSerialReg in '..\..\..\Fontes\ACBrSerial\ACBrSerialReg.pas';
+  ACBrSerialReg in '..\..\..\..\ACBr\Fontes\ACBrSerial\ACBrSerialReg.pas';
 
 end.
+

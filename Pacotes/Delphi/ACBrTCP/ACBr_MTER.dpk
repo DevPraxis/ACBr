@@ -1,6 +1,7 @@
 package ACBr_MTER;
 
 {$R *.res}
+{$R *.otares}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
@@ -26,22 +27,23 @@ package ACBr_MTER;
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
 {$DESCRIPTION 'ACBr - MTER Componente Servidor de Micro Terminais TCP/IP - (http://www.projectoacbr.com.br/)'}
-{$RUNONLY}
 {$IMPLICITBUILD OFF}
 
 requires
   rtl,
   vcl,
+  designide,
   ACBr_TCP,
   ACBr_Serial;
 
 contains
-  ACBrMTer in '..\..\..\Fontes\ACBrTCP\ACBrMTer.pas',
-  ACBrMTerClass in '..\..\..\Fontes\ACBrTCP\ACBrMTerClass.pas',
-  ACBrMTerVT100 in '..\..\..\Fontes\ACBrTCP\ACBrMTerVT100.pas',
-  ACBrMTerSB100 in '..\..\..\Fontes\ACBrTCP\ACBrMTerSB100.pas',
-  ACBrMTerStxEtx in '..\..\..\Fontes\ACBrTCP\ACBrMTerStxEtx.pas',
-  ACBrMTerPMTG in '..\..\..\Fontes\ACBrTCP\ACBrMTerPMTG.pas';
+  ACBrMTERReg in '..\..\..\..\ACBr\Fontes\ACBrTCP\ACBrMTERReg.pas',
+  ACBrMTer in '..\..\..\..\ACBr\Fontes\ACBrTCP\ACBrMTer.pas',
+  ACBrMTerClass in '..\..\..\..\ACBr\Fontes\ACBrTCP\ACBrMTerClass.pas',
+  ACBrMTerVT100 in '..\..\..\..\ACBr\Fontes\ACBrTCP\ACBrMTerVT100.pas',
+  ACBrMTerSB100 in '..\..\..\..\ACBr\Fontes\ACBrTCP\ACBrMTerSB100.pas',
+  ACBrMTerStxEtx in '..\..\..\..\ACBr\Fontes\ACBrTCP\ACBrMTerStxEtx.pas',
+  ACBrMTerPMTG in '..\..\..\..\ACBr\Fontes\ACBrTCP\ACBrMTerPMTG.pas';
 
 end.
 

@@ -1,15 +1,16 @@
 {******************************************************************************}
-{ Projeto: Componentes ACBr                                                    }
-{  Biblioteca multiplataforma de componentes Delphi para interação com equipa- }
-{ mentos de Automação Comercial utilizados no Brasil                           }
+{ Projeto: Componente ACBrLCDPR                                                }
+{  Biblioteca multiplataforma de componentes Delphi para geração do LCDPR -    }
+{ Lirvro Caixa Digital do Produtor Rural                                       }
 {                                                                              }
-{ Direitos Autorais Reservados (c) 2020 Daniel Simoes de Almeida               }
 {                                                                              }
-{ Colaboradores nesse arquivo: Willian Hübner                                  }
-{						       Elton Barbosa (EMBarbosa)                       }
+{ Desenvolvimento e doação ao Projeto ACBr: Willian Hübner                     }
 {                                                                              }
-{  Você pode obter a última versão desse arquivo na pagina do  Projeto ACBr    }
-{ Componentes localizado em      http://www.sourceforge.net/projects/acbr      }
+{ Ajustes e correções para doação: Elton Barbosa (EMBarbosa)                   }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na pagina do Projeto ACBr     }
+{ Componentes localizado em http://www.sourceforge.net/projects/acbr           }
+{                                                                              }
 {                                                                              }
 {  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
 { sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
@@ -27,18 +28,19 @@
 { Você também pode obter uma copia da licença em:                              }
 { http://www.opensource.org/licenses/lgpl-license.php                          }
 {                                                                              }
-{ Daniel Simões de Almeida - daniel@projetoacbr.com.br - www.projetoacbr.com.br}
-{       Rua Coronel Aureliano de Camargo, 963 - Tatuí - SP - 18270-170         }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
 {******************************************************************************}
-
 package ACBr_LCDPR;
 
 {$R *.res}
+{$R *.otares}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
 {$BOOLEVAL OFF}
-{$DEBUGINFO OFF}
+{$DEBUGINFO ON}
 {$EXTENDEDSYNTAX ON}
 {$IMPORTEDDATA ON}
 {$IOCHECKS ON}
@@ -48,7 +50,7 @@ package ACBr_LCDPR;
 {$OPTIMIZATION OFF}
 {$OVERFLOWCHECKS OFF}
 {$RANGECHECKS OFF}
-{$REFERENCEINFO ON}
+{$REFERENCEINFO OFF}
 {$SAFEDIVIDE OFF}
 {$STACKFRAMES ON}
 {$TYPEDADDRESS OFF}
@@ -58,9 +60,8 @@ package ACBr_LCDPR;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'ACBr - Livro Caixa Digital do Produtor Rural (LCDPR) - (http://www.projetoacbr.com.br/)'}
-{$RUNONLY}
-{$IMPLICITBUILD ON}
+{$DESCRIPTION 'ACBr - LCDPR - (http://www.projetoacbr.com.br/)'}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl,
@@ -68,22 +69,23 @@ requires
   ACBr_synapse;
 
 contains
-  Bloco0040 in '..\..\..\..\Fontes\ACBrTXT\ACBrLCDPR\Bloco0040.pas',
-  Bloco0050 in '..\..\..\..\Fontes\ACBrTXT\ACBrLCDPR\Bloco0050.pas',
-  BlocoQ in '..\..\..\..\Fontes\ACBrTXT\ACBrLCDPR\BlocoQ.pas',
-  UACBrLCDPR in '..\..\..\..\Fontes\ACBrTXT\ACBrLCDPR\UACBrLCDPR.pas',
-  LCDPRBlocos in '..\..\..\..\Fontes\ACBrTXT\ACBrLCDPR\LCDPRBlocos.pas',
-  Registro0000 in '..\..\..\..\Fontes\ACBrTXT\ACBrLCDPR\Registro0000.pas',
-  Registro0010 in '..\..\..\..\Fontes\ACBrTXT\ACBrLCDPR\Registro0010.pas',
-  Registro0030 in '..\..\..\..\Fontes\ACBrTXT\ACBrLCDPR\Registro0030.pas',
-  Registro0040 in '..\..\..\..\Fontes\ACBrTXT\ACBrLCDPR\Registro0040.pas',
-  Registro0045 in '..\..\..\..\Fontes\ACBrTXT\ACBrLCDPR\Registro0045.pas',
-  Registro0050 in '..\..\..\..\Fontes\ACBrTXT\ACBrLCDPR\Registro0050.pas',
-  Registro9999 in '..\..\..\..\Fontes\ACBrTXT\ACBrLCDPR\Registro9999.pas',
-  RegistroQ100 in '..\..\..\..\Fontes\ACBrTXT\ACBrLCDPR\RegistroQ100.pas',
-  RegistroQ200 in '..\..\..\..\Fontes\ACBrTXT\ACBrLCDPR\RegistroQ200.pas',
-  LCDPRUtils in '..\..\..\..\Fontes\ACBrTXT\ACBrLCDPR\LCDPRUtils.pas',
-  uDadosContador in '..\..\..\..\Fontes\ACBrTXT\ACBrLCDPR\uDadosContador.pas';
+  Bloco0040 in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrLCDPR\Bloco0040.pas',
+  Bloco0050 in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrLCDPR\Bloco0050.pas',
+  BlocoQ in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrLCDPR\BlocoQ.pas',
+  UACBrLCDPR in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrLCDPR\UACBrLCDPR.pas',
+  LCDPRBlocos in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrLCDPR\LCDPRBlocos.pas',
+  Registro0000 in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrLCDPR\Registro0000.pas',
+  Registro0010 in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrLCDPR\Registro0010.pas',
+  Registro0030 in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrLCDPR\Registro0030.pas',
+  Registro0040 in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrLCDPR\Registro0040.pas',
+  Registro0045 in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrLCDPR\Registro0045.pas',
+  Registro0050 in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrLCDPR\Registro0050.pas',
+  Registro9999 in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrLCDPR\Registro9999.pas',
+  RegistroQ100 in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrLCDPR\RegistroQ100.pas',
+  RegistroQ200 in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrLCDPR\RegistroQ200.pas',
+  LCDPRUtils in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrLCDPR\LCDPRUtils.pas',
+  uDadosContador in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrLCDPR\uDadosContador.pas',
+  ACBrLCDPRReg in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrLCDPR\ACBrLCDPRReg.pas';
 
 end.
 

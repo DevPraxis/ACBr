@@ -69,12 +69,12 @@ package ACBr_NFeDanfeRL;
 {$ENDIF IMPLICITBUILDING}
 {$DESCRIPTION 'ACBr - DANFe em FortesReport - (http://www.projetoacbr.com.br/)'}
 {$RUNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl,
   ACBr_NFe,
-  ACBrDFeReportRL;
+  ACBr_DFeReportRL;
 
 contains
   ACBrNFeDANFeRL in '..\..\..\..\..\..\..\Fontes\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\ACBrNFeDANFeRL.pas' {frlDANFeRL},

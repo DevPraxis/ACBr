@@ -25,15 +25,15 @@ package DCLACBr_DFeComum;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESIGNONLY}
-{$IMPLICITBUILD ON}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl,
-  designide,
-  ACBr_DFeComum;
+  DesignIDE,
+  ACBr_PCNComum;
 
 contains
-  ACBrDFeRegUtil in '..\..\..\Fontes\ACBrDFe\ACBrDFeRegUtil.pas';
+  ACBrDFeRegUtil in '..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrDFeRegUtil.pas';
 
 end.

@@ -25,7 +25,6 @@ package ACBr_EDI;
 {$IMAGEBASE $400000}
 {$DEFINE RELEASE}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'ACBr - EDI - Intercâmbio de Arquivos para Transportadora - (http://www.projetoacbr.com.br/)'}
 {$RUNONLY}
 {$IMPLICITBUILD OFF}
 
@@ -37,13 +36,12 @@ requires
   ACBr_Comum;
 
 contains
-  ACBrEDICobranca in '..\..\..\..\Fontes\ACBrTXT\ACBrEDI\ACBrEDICobranca.pas',
-  ACBrEDIConhectos in '..\..\..\..\Fontes\ACBrTXT\ACBrEDI\ACBrEDIConhectos.pas',
-  ACBrEDINotaFiscal in '..\..\..\..\Fontes\ACBrTXT\ACBrEDI\ACBrEDINotaFiscal.pas',
-  ACBrEDIOcorrencia in '..\..\..\..\Fontes\ACBrTXT\ACBrEDI\ACBrEDIOcorrencia.pas',
-  pediConversao in '..\..\..\..\Fontes\ACBrTXT\ACBrEDI\pediConversao.pas',
-  ACBrEDIClass in '..\..\..\..\Fontes\ACBrTXT\ACBrEDI\ACBrEDIClass.pas',
-  ACBrEDIPreFatura in '..\..\..\..\Fontes\ACBrTXT\ACBrEDI\ACBrEDIPreFatura.pas';
+  ACBrEDICobranca in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrEDI\ACBrEDICobranca.pas',
+  ACBrEDIConhectos in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrEDI\ACBrEDIConhectos.pas',
+  ACBrEDINotaFiscal in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrEDI\ACBrEDINotaFiscal.pas',
+  ACBrEDIOcorrencia in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrEDI\ACBrEDIOcorrencia.pas',
+  pediConversao in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrEDI\pediConversao.pas',
+  ACBrEDIClass in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrEDI\ACBrEDIClass.pas';
 
 end.
 

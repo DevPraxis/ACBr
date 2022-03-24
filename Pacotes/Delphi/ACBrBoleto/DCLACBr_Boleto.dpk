@@ -25,9 +25,9 @@ package DCLACBr_Boleto;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'ACBr - (design-time) Boleto - (http://www.projetoacbr.com.br/)'}
+{$DESCRIPTION 'ACBr - (Designtime) Boleto - (http://www.projetoacbr.com.br/)'}
 {$DESIGNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl,
@@ -35,6 +35,6 @@ requires
   designide;
 
 contains
-  ACBrBoletoReg in '..\..\..\Fontes\ACBrBoleto\ACBrBoletoReg.pas';
+  ACBrBoletoReg in '..\..\..\..\ACBr\Fontes\ACBrBoleto\ACBrBoletoReg.pas';
 
 end.

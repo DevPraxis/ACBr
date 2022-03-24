@@ -24,9 +24,9 @@ package ACBR_DeSTDA;
 {$MINENUMSIZE 1}
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
+{$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
 {$DESCRIPTION 'ACBr - DeSTDA - (http://www.projetoacbr.com.br/)'}
-{$RUNONLY}
 {$IMPLICITBUILD OFF}
 
 requires
@@ -35,14 +35,14 @@ requires
   ACBr_TXTComum;
 
 contains
-  ACBrDeSTDA in '..\..\..\..\Fontes\ACBrTXT\ACBrDeSTDA\ACBrDeSTDA.pas',
-  ACBrDeSTDABlocos in '..\..\..\..\Fontes\ACBrTXT\ACBrDeSTDA\ACBrDeSTDABlocos.pas',
-  ACBrDeSTDABloco_G_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrDeSTDA\ACBrDeSTDABloco_G_Class.pas',
-  ACBrDeSTDABloco_0_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrDeSTDA\ACBrDeSTDABloco_0_Class.pas',
-  ACBrDeSTDABloco_9_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrDeSTDA\ACBrDeSTDABloco_9_Class.pas',
-  ACBrDeSTDA4715 in '..\..\..\..\Fontes\ACBrTXT\ACBrDeSTDA\ACBrDeSTDA4715.pas',
-  ACBrDeSTDABloco_0 in '..\..\..\..\Fontes\ACBrTXT\ACBrDeSTDA\ACBrDeSTDABloco_0.pas',
-  ACBrDeSTDABloco_9 in '..\..\..\..\Fontes\ACBrTXT\ACBrDeSTDA\ACBrDeSTDABloco_9.pas',
-  ACBrDeSTDABloco_G in '..\..\..\..\Fontes\ACBrTXT\ACBrDeSTDA\ACBrDeSTDABloco_G.pas';
+  ACBrDeSTDA in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrDeSTDA\ACBrDeSTDA.pas',
+  ACBrDeSTDABlocos in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrDeSTDA\ACBrDeSTDABlocos.pas',
+  ACBrDeSTDABloco_G_Class in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrDeSTDA\ACBrDeSTDABloco_G_Class.pas',
+  ACBrDeSTDABloco_0_Class in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrDeSTDA\ACBrDeSTDABloco_0_Class.pas',
+  ACBrDeSTDABloco_9_Class in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrDeSTDA\ACBrDeSTDABloco_9_Class.pas',
+  ACBrDeSTDA4715 in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrDeSTDA\ACBrDeSTDA4715.pas',
+  ACBrDeSTDABloco_0 in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrDeSTDA\ACBrDeSTDABloco_0.pas',
+  ACBrDeSTDABloco_9 in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrDeSTDA\ACBrDeSTDABloco_9.pas',
+  ACBrDeSTDABloco_G in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrDeSTDA\ACBrDeSTDABloco_G.pas';
 
 end.

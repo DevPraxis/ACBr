@@ -27,14 +27,15 @@ package ACBr_NFCeECFVirtual;
 {$ENDIF IMPLICITBUILDING}
 {$DESCRIPTION 'ACBr - Implementação ECF Virtual NFCe. Permite usar ACBrECF para emitir NFCe como se fosse um ECF'}
 {$RUNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl,
+  designide,
   ACBr_NFe,
   ACBr_Serial;
 
 contains
-  ACBrECFVirtualNFCe in '..\..\..\..\..\Fontes\ACBrDFe\ACBrNFe\ACBrECFVirtualNFCe\ACBrECFVirtualNFCe.pas';
+  ACBrECFVirtualNFCe in '..\..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrNFe\ACBrECFVirtualNFCe\ACBrECFVirtualNFCe.pas';
 
 end.

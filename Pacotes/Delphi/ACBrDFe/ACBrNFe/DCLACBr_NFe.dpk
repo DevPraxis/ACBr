@@ -25,18 +25,18 @@ package DCLACBr_NFe;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'ACBr - (design-time) Nota Fiscal Eletrônica - (http://www.projetoacbr.com.br/)'}
+{$DESCRIPTION 'ACBr - (DesignTime) Nota Fiscal Eletrônica - (http://www.projetoacbr.com.br/)'}
 {$DESIGNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl,
   designide,
   ACBr_NFe,
-  dclacbr_comum,
-  DCLACBr_DFeComum;
+  DCLACBr_DFeComum,
+  DCLACBr_Comum;
 
 contains
-  ACBrNFeReg in '..\..\..\..\Fontes\ACBrDFe\ACBrNFe\ACBrNFeReg.pas';
+  ACBrNFeReg in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrNFe\ACBrNFeReg.pas';
 
 end.

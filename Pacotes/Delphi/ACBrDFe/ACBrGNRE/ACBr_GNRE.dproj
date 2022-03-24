@@ -1,0 +1,161 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A50D13E3-23F2-4883-A42A-997A02400D7C}</ProjectGuid>
+        <MainSource>ACBr_GNRE.dpk</MainSource>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <TargetedPlatforms>38017</TargetedPlatforms>
+        <AppType>Package</AppType>
+        <FrameworkType>VCL</FrameworkType>
+        <ProjectVersion>18.8</ProjectVersion>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Android' and '$(Base)'=='true') or '$(Base_Android)'!=''">
+        <Base_Android>true</Base_Android>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <DCC_E>false</DCC_E>
+        <DCC_F>false</DCC_F>
+        <DCC_K>false</DCC_K>
+        <DCC_N>true</DCC_N>
+        <DCC_S>false</DCC_S>
+        <DCC_ImageBase>00400000</DCC_ImageBase>
+        <DCC_DebugInformation>1</DCC_DebugInformation>
+        <DCC_Optimize>false</DCC_Optimize>
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <DCC_SymbolReferenceInfo>1</DCC_SymbolReferenceInfo>
+        <DCC_Description>ACBr - Guia Nacional de Recolhimento de Tributos Estaduais - (http://www.projetoacbr.com.br/)</DCC_Description>
+        <DCC_UsePackage>vcl;rtl;vclx;indy;inet;xmlrtl;vclie;inetdbbde;inetdbxpress;dbrtl;dsnap;dsnapcon;vcldb;soaprtl;VclSmp;dbexpress;dbxcds;inetdb;bdertl;vcldbx;webdsnap;websnap;adortl;ibxpress;teeui;teedb;tee;dss;visualclx;visualdbclx;vclactnband;vclshlctrls;IntrawebDB_50_70;Intraweb_50_70;Rave50CLX;Rave50VCL;dclOfficeXP;Jcl;JclVcl;JvCoreD7R;JvSystemD7R;JvStdCtrlsD7R;JvAppFrmD7R;JvBandsD7R;JvDBD7R;JvDlgsD7R;JvBDED7R;JvCmpD7R;JvCryptD7R;JvCtrlsD7R;JvCustomD7R;JvDockingD7R;JvDotNetCtrlsD7R;JvEDID7R;JvGlobusD7R;JvHMID7R;JvInterpreterD7R;JvJansD7R;JvManagedThreadsD7R;JvMMD7R;JvNetD7R;JvPageCompsD7R;JvPluginD7R;JvPrintPreviewD7R;JvRuntimeDesignD7R;JvTimeFrameworkD7R;JvUIBD7R;JvValidatorsD7R;JvWizardD7R;JvXPCtrlsD7R;cxEditorsVCLD7;cxLibraryVCLD7;dxThemeD7;cxDataD7;cxExtEditorsVCLD7;cxGridD7;dxGDIPlusD7;dxCoreD7;cxPageControlVCLD7;dxmdsD7;dxPSCoreD7;dxComnD7;dxPScxCommonD7;dxPSLnksD7;dxPScxExtCommonD7;dxPScxGrid6LnkD7;dxPScxPCProdD7;dxPSDBTeeChartD7;dxPSTeeChartD7;cxIntlPrintSystem3;cxExportVCLD7;PcxIntl;SMCmpntD7;ScrCamD7_Package;Pdf_Viewer;AnyDAC_Phys_D7;AnyDAC_ComI_D7;AnyDAC_PhysODBC_D7;AnyDAC_PhysMSSQL_D7;AnyDAC_Comp_D7;rbDAD107;rbIDE107;rbRCL107;rbDB107;rbDBE107;RemObjects_Indy_D7;RemObjects_WebBroker_D7;RemObjects_Synapse_D7;ACBr_NFe2;PCN2;ACBrComum;synapse;ACBrCapicom;ACBr_NFSe;Comp70;EzBasic_D7;EZPlanit_D7;EzSpecials_D7;ACBrOpenSSL;$(DCC_UsePackage)</DCC_UsePackage>
+        <GenDll>true</GenDll>
+        <GenPackage>true</GenPackage>
+        <SanitizedProjectName>ACBr_GNRE</SanitizedProjectName>
+        <DCC_OutputNeverBuildDcps>true</DCC_OutputNeverBuildDcps>
+        <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;DUnitX.Loggers.GUI;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0</VerInfo_Keys>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Android)'!=''">
+        <VerInfo_Keys>package=com.embarcadero.$(MSBuildProjectName);label=$(MSBuildProjectName);versionCode=1;versionName=1.0.0;persistent=False;restoreAnyVersion=False;installLocation=auto;largeHeap=False;theme=TitleBar;hardwareAccelerated=true;apiKey=</VerInfo_Keys>
+        <BT_BuildType>Debug</BT_BuildType>
+        <VerInfo_IncludeVerInfo>false</VerInfo_IncludeVerInfo>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <BT_BuildType>Debug</BT_BuildType>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <Icon_MainIcon>ACBr_GNRE_Icon.ico</Icon_MainIcon>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <Icon_MainIcon>ACBr_GNRE_Icon.ico</Icon_MainIcon>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="rtl.dcp"/>
+        <DCCReference Include="vcl.dcp"/>
+        <DCCReference Include="designide.dcp"/>
+        <DCCReference Include="ACBr_DFeComum.dcp"/>
+        <DCCReference Include="DCLACBr_Comum.dcp"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\ACBrGNRE2.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\ACBrGNREConfiguracoes.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\ACBrGNREGuias.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\ACBrGNREReg.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\ACBrGNREWebServices.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreConfigUF.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreConsConfigUF.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreConsResLoteGNRE.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreConversao.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreGNRE.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreGNRER.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreGNRERetorno.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreGNREW.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetCampoAdicional.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetConsConfigUF.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetConsResLoteGNRE.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetDetalhamentoReceita.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetEnvLoteGNRE.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetPeriodoApuracao.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetProduto.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetReceita.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetTipoDocumentoOrigem.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\GNRE\ACBrGNREGuiaClass.pas"/>
+        <DCCReference Include="..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\ACBrGNREGuiasRetorno.pas"/>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType>Package</Borland.ProjectType>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Source>
+                    <Source Name="MainSource">ACBr_GNRE.dpk</Source>
+                </Source>
+                <Language>
+                    <Language Name="RootDir">X:\Src\Core\Third\ACBr\Pacotes\Delphi\ACBrDFe\ACBrGNRE\</Language>
+                </Language>
+            </Delphi.Personality>
+            <Platforms>
+                <Platform value="Android">False</Platform>
+                <Platform value="Android64">True</Platform>
+                <Platform value="iOSDevice32">False</Platform>
+                <Platform value="iOSDevice64">True</Platform>
+                <Platform value="iOSSimulator">False</Platform>
+                <Platform value="Linux64">True</Platform>
+                <Platform value="OSX64">True</Platform>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">False</Platform>
+            </Platforms>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+</Project>

@@ -1,6 +1,7 @@
 package DCLACBr_Convenio115;
 
 {$R *.res}
+{$R *.otares}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
@@ -25,7 +26,7 @@ package DCLACBr_Convenio115;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'ACBr - (design-time) Convênio ICMS 115 - (http://www.projetoacbr.com.br/)'}
+{$DESCRIPTION 'ACBr - (DesignTime) Convênio ICMS 115 - (http://www.projetoacbr.com.br/)'}
 {$DESIGNONLY}
 {$IMPLICITBUILD OFF}
 
@@ -35,6 +36,6 @@ requires
   ACBr_Convenio115;
 
 contains
-  ACBrConvenio115Reg in '..\..\..\..\Fontes\ACBrTXT\ACBrConvenio115\ACBrConvenio115Reg.pas';
+  ACBrConvenio115Reg in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrConvenio115\ACBrConvenio115Reg.pas';
 
 end.

@@ -25,18 +25,18 @@ package DCLACBr_CTe;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'ACBr - (design-time) Conhecimento de Transporte Eletrônico - (http://www.projetoacbr.com.br/)'}
+{$DESCRIPTION 'ACBr - (DesignTime) Conhecimento de Transporte Eletrônico - (http://www.projetoacbr.com.br/)'}
 {$DESIGNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl,
   ACBr_CTe,
   designide,
-  DCLACBr_Comum,
-  DCLACBr_DFeComum;
+  DCLACBr_DFeComum,
+  DCLACBr_Comum;
 
 contains
-  ACBrCTeReg in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\ACBrCTeReg.pas';
+  ACBrCTeReg in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrCTe\ACBrCTeReg.pas';
 
 end.

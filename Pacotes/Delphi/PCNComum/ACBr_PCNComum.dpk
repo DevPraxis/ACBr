@@ -1,6 +1,7 @@
 package ACBr_PCNComum;
 
 {$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
 {$BOOLEVAL OFF}
@@ -22,6 +23,8 @@ package ACBr_PCNComum;
 {$WRITEABLECONST OFF}
 {$MINENUMSIZE 1}
 {$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
 {$DESCRIPTION 'ACBr - Projeto Cooperar - (http://br.groups.yahoo.com/group/projeto_cooperar_nfe/)'}
 {$RUNONLY}
 {$IMPLICITBUILD OFF}
@@ -32,18 +35,18 @@ requires
 
 contains
   pcnAuxiliar in '..\..\..\Fontes\PCNComum\pcnAuxiliar.pas',
-  pcnConversao in '..\..\..\Fontes\PCNComum\pcnConversao.pas',
   pcnConsts in '..\..\..\Fontes\PCNComum\pcnConsts.pas',
   pcnConsCad in '..\..\..\Fontes\PCNComum\pcnConsCad.pas',
   pcnRetConsCad in '..\..\..\Fontes\PCNComum\pcnRetConsCad.pas',
   pcnConsStatServ in '..\..\..\Fontes\PCNComum\pcnConsStatServ.pas',
   pcnRetConsStatServ in '..\..\..\Fontes\PCNComum\pcnRetConsStatServ.pas',
   pcnDistDFeInt in '..\..\..\Fontes\PCNComum\pcnDistDFeInt.pas',
-  pcnRetDistDFeInt in '..\..\..\Fontes\PCNComum\pcnRetDistDFeInt.pas',
   pcnConsReciDFe in '..\..\..\Fontes\PCNComum\pcnConsReciDFe.pas',
   pcnRetConsReciDFe in '..\..\..\Fontes\PCNComum\pcnRetConsReciDFe.pas',
   pcnSignature in '..\..\..\Fontes\PCNComum\pcnSignature.pas',
   pcnGerador in '..\..\..\Fontes\PCNComum\pcnGerador.pas',
-  pcnLeitor in '..\..\..\Fontes\PCNComum\pcnLeitor.pas';
+  pcnLeitor in '..\..\..\Fontes\PCNComum\pcnLeitor.pas',
+  pcnRetDistDFeInt in '..\..\..\Fontes\PCNComum\pcnRetDistDFeInt.pas',
+  pcnConversao in '..\..\..\Fontes\PCNComum\pcnConversao.pas';
 
 end.

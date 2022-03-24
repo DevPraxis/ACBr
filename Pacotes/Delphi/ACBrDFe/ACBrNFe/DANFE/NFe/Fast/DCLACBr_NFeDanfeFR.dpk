@@ -1,6 +1,7 @@
 package DCLACBr_NFeDanfeFR;
 
 {$R *.res}
+{$R *.otares}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
@@ -25,17 +26,17 @@ package DCLACBr_NFeDanfeFR;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'ACBr - (design-time) DANFe em Fast Report - (http://www.projetoacbr.com.br/)'}
+{$DESCRIPTION 'ACBr - (DesignTime) DANFe em FastReport - (http://www.projetoacbr.com.br/)'}
 {$DESIGNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl,
   ACBr_NFeDanfeFR,
-  DCLACBr_Comum,
+  ACBr_Comum,
   designide;
 
 contains
-  ACBrNFeDANFEFRReg in '..\..\..\..\..\..\..\Fontes\ACBrDFe\ACBrNFe\DANFE\NFe\Fast\ACBrNFeDANFEFRReg.pas';
+  ACBrNFeDANFEFRReg in '..\..\..\..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrNFe\DANFE\NFe\Fast\ACBrNFeDANFEFRReg.pas';
 
 end.

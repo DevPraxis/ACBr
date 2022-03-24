@@ -1,6 +1,7 @@
 package DCLACBr_SPEDImportar;
 
 {$R *.res}
+{$R *.otares}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
@@ -25,7 +26,7 @@ package DCLACBr_SPEDImportar;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'ACBr - (design-time) EFD ICMS/IPI, EFD Contribuições, EFD Contábil - Importação - (http://www.projetoacbr.com.br/)'}
+{$DESCRIPTION 'ACBr - (DesignTime) EFD ICMS/IPI, EFD Contribuições, EFD Contábil - Importação - (http://www.projetoacbr.com.br/)'}
 {$DESIGNONLY}
 {$IMPLICITBUILD OFF}
 
@@ -34,6 +35,6 @@ requires
   ACBr_SPEDImportar;
 
 contains
-  ACBrSpedImportarReg in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSpedImportarReg.pas';
+  ACBrSpedImportarReg in '..\..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrSPED\ACBrSpedImportarReg.pas';
 
 end.

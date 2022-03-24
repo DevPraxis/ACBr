@@ -42,7 +42,7 @@ package ACBr_SATWS;
 {$OPTIMIZATION OFF}
 {$OVERFLOWCHECKS OFF}
 {$RANGECHECKS OFF}
-{$REFERENCEINFO ON}
+{$DEFINITIONINFO ON}
 {$SAFEDIVIDE OFF}
 {$STACKFRAMES ON}
 {$TYPEDADDRESS OFF}
@@ -53,18 +53,20 @@ package ACBr_SATWS;
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
 {$DESCRIPTION 'ACBr - SATWS - Consulta de lotes enviados de CF-e-SAT - (http://www.projetoacbr.com.br/)'}
-{$RUNONLY}
 {$IMPLICITBUILD OFF}
 
 requires
   rtl,
   vcl,
-  ACBr_DFeComum;
+  designide,
+  ACBr_DFeComum,
+  ACBr_Comum;
 
 contains
-  ACBrSATWS in '..\..\..\..\Fontes\ACBrDFe\ACBrSATWS\ACBrSATWS.pas',
-  ACBrSATWS_WebServices in '..\..\..\..\Fontes\ACBrDFe\ACBrSATWS\ACBrSATWS_WebServices.pas',
-  pcnSATConsulta in '..\..\..\..\Fontes\ACBrDFe\ACBrSATWS\PCNSATWS\pcnSATConsulta.pas',
-  pcnSATConsultaRet in '..\..\..\..\Fontes\ACBrDFe\ACBrSATWS\PCNSATWS\pcnSATConsultaRet.pas';
+  ACBrSATWS in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrSATWS\ACBrSATWS.pas',
+  ACBrSATWS_Reg in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrSATWS\ACBrSATWS_Reg.pas',
+  ACBrSATWS_WebServices in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrSATWS\ACBrSATWS_WebServices.pas',
+  pcnSATConsulta in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrSATWS\PCNSATWS\pcnSATConsulta.pas',
+  pcnSATConsultaRet in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrSATWS\PCNSATWS\pcnSATConsultaRet.pas';
 
 end.

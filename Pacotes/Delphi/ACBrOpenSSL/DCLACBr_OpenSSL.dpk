@@ -25,15 +25,15 @@ package DCLACBr_OpenSSL;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'ACBr - (design-time) Bind para OpenSSL 1.1.1 - (http://www.projetoacbr.com.br/)'}
+{$DESCRIPTION 'ACBr - (DesignTime) Bind para OpenSSL 1.1.1 - (http://www.projetoacbr.com.br/)'}
 {$DESIGNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl,
   ACBr_OpenSSL;
 
 contains
-  ACBrOpenSSLReg in '..\..\..\Fontes\ACBrOpenSSL\ACBrOpenSSLReg.pas';
+  ACBrOpenSSLReg in '..\..\..\..\ACBr\Fontes\ACBrOpenSSL\ACBrOpenSSLReg.pas';
 
 end.

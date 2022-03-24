@@ -1,17 +1,18 @@
 {******************************************************************************}
-{ Projeto: Componentes ACBr - ACBrCTeDACTeRL                                   }
-{  Biblioteca multiplataforma de componentes Delphi para interação com equipa- }
-{ mentos de Automação Comercial utilizados no Brasil                           }
+{ Projeto: Componente ACBrCTeDACTeRL                                           }
+{  Biblioteca multiplataforma de componentes Delphi para emissão de Nota Fiscal}
+{ eletrônica - NFe - http://www.nfe.fazenda.gov.br                             }
 {                                                                              }
-{ Direitos Autorais Reservados (c) 2020 Daniel Simoes de Almeida               }
+{ Direitos Autorais Reservados (c) 2014 Mark dos Santos Gonçalves              }
+{                                       Juliomar Marchetti                     }
+{                                       Daniel Simoes de Almeida               }
+{                                       André Ferreira de Moraes               }
 {                                                                              }
-{ Colaboradores nesse arquivo: Mark dos Santos Gonçalves                       }
-{                              Juliomar Marchetti                              }
-{                              Daniel Simoes de Almeida                        }
-{                              André Ferreira de Moraes                        }
+{ Colaboradores nesse arquivo:                                                 }
 {                                                                              }
-{  Você pode obter a última versão desse arquivo na pagina do  Projeto ACBr    }
-{ Componentes localizado em      http://www.sourceforge.net/projects/acbr      }
+{  Você pode obter a última versão desse arquivo na pagina do Projeto ACBr     }
+{ Componentes localizado em http://www.sourceforge.net/projects/acbr           }
+{                                                                              }
 {                                                                              }
 {  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
 { sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
@@ -29,10 +30,15 @@
 { Você também pode obter uma copia da licença em:                              }
 { http://www.opensource.org/licenses/lgpl-license.php                          }
 {                                                                              }
-{ Daniel Simões de Almeida - daniel@projetoacbr.com.br - www.projetoacbr.com.br}
-{       Rua Coronel Aureliano de Camargo, 963 - Tatuí - SP - 18270-170         }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
 {******************************************************************************}
 
+{******************************************************************************
+|* Historico
+|*
+******************************************************************************}
 package ACBr_CTeDacteRL;
 
 {$R *.res}
@@ -47,28 +53,28 @@ package ACBr_CTeDacteRL;
 {$LOCALSYMBOLS ON}
 {$LONGSTRINGS ON}
 {$OPENSTRINGS ON}
-{$OPTIMIZATION OFF}
+{$OPTIMIZATION ON}
 {$OVERFLOWCHECKS OFF}
 {$RANGECHECKS OFF}
 {$DEFINITIONINFO ON}
 {$SAFEDIVIDE OFF}
-{$STACKFRAMES ON}
+{$STACKFRAMES OFF}
 {$TYPEDADDRESS OFF}
 {$VARSTRINGCHECKS ON}
 {$WRITEABLECONST OFF}
 {$MINENUMSIZE 1}
 {$IMAGEBASE $400000}
-{$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
 {$DESCRIPTION 'ACBr - DACTe em FortesReport - (http://www.projetoacbr.com.br/)'}
 {$RUNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl,
   dsnap,
+  FrceRT,
   ACBr_CTe,
-  ACBrDFeReportRL;
+  ACBr_DFeReportRL;
 
 contains
   ACBrCTeDACTeRL in '..\..\..\..\..\..\Fontes\ACBrDFe\ACBrCTe\DACTE\Fortes\ACBrCTeDACTeRL.pas' {frmDACTeRL},
@@ -77,7 +83,7 @@ contains
   ACBrCTeDACTeRLRetratoA5 in '..\..\..\..\..\..\Fontes\ACBrDFe\ACBrCTe\DACTE\Fortes\ACBrCTeDACTeRLRetratoA5.pas' {frmDACTeRLRetratoA5},
   ACBrCTeDAEventoRL in '..\..\..\..\..\..\Fontes\ACBrDFe\ACBrCTe\DACTE\Fortes\ACBrCTeDAEventoRL.pas' {frmCTeDAEventoRL},
   ACBrCTeDAEventoRLRetrato in '..\..\..\..\..\..\Fontes\ACBrDFe\ACBrCTe\DACTE\Fortes\ACBrCTeDAEventoRLRetrato.pas' {frmCTeDAEventoRLRetrato},
-  ACBrCTeDAInutRL in '..\..\..\..\..\..\Fontes\ACBrDFe\ACBrCTe\DACTE\Fortes\ACBrCTeDAInutRL.pas',
-  ACBrCTeDAInutRLRetrato in '..\..\..\..\..\..\Fontes\ACBrDFe\ACBrCTe\DACTE\Fortes\ACBrCTeDAInutRLRetrato.pas';
+  ACBrCTeDAInutRL in '..\..\..\..\..\..\Fontes\ACBrDFe\ACBrCTe\DACTE\Fortes\ACBrCTeDAInutRL.pas' {frmCTeDAInutRL},
+  ACBrCTeDAInutRLRetrato in '..\..\..\..\..\..\Fontes\ACBrDFe\ACBrCTe\DACTE\Fortes\ACBrCTeDAInutRLRetrato.pas' {frmCTeDAInutRLRetrato};
 
 end.

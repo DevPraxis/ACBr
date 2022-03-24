@@ -26,16 +26,17 @@ package DCLACBr_Comum;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'ACBr - (design-time) Biblioteca Comum, EAD, AAC  - (http://www.projetoacbr.com.br/)'}
+{$DESCRIPTION 'ACBr - Biblioteca DesignTime Comum, EAD, AAC  - (http://www.projetoacbr.com.br/)'}
 {$DESIGNONLY}
 {$IMPLICITBUILD OFF}
 
 requires
   rtl,
   ACBr_Comum,
-  designide;
+  designide,
+  ACBr_synapse;
 
 contains
-  ACBrReg in '..\..\..\Fontes\ACBrComum\ACBrReg.pas';
+  ACBrReg in '..\..\..\..\ACBr\Fontes\ACBrComum\ACBrReg.pas';
 
 end.

@@ -35,10 +35,10 @@ requires
   ACBr_PCNComum;
 
 contains
-  ACBrIntegrador in '..\..\..\Fontes\ACBrIntegrador\ACBrIntegrador.pas',
-  ACBrIntegradorResposta in '..\..\..\Fontes\ACBrIntegrador\ACBrIntegradorResposta.pas',
-  pcnVFPe in '..\..\..\Fontes\ACBrIntegrador\pcnVFPe\pcnVFPe.pas',
   pcnVFPeR in '..\..\..\Fontes\ACBrIntegrador\pcnVFPe\pcnVFPeR.pas',
-  pcnVFPeW in '..\..\..\Fontes\ACBrIntegrador\pcnVFPe\pcnVFPeW.pas';
+  ACBrIntegradorResposta in '..\..\..\Fontes\ACBrIntegrador\ACBrIntegradorResposta.pas',
+  pcnVFPeW in '..\..\..\Fontes\ACBrIntegrador\pcnVFPe\pcnVFPeW.pas',
+  pcnVFPe in '..\..\..\Fontes\ACBrIntegrador\pcnVFPe\pcnVFPe.pas',
+  ACBrIntegrador in '..\..\..\Fontes\ACBrIntegrador\ACBrIntegrador.pas';
 
 end.

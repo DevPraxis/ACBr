@@ -25,7 +25,7 @@ package DCLACBr_SPED;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'ACBr - (design-time) EFD ICMS/IPI, EFD Contribuições, EFD Contábil - (http://www.projetoacbr.com.br/)'}
+{$DESCRIPTION 'ACBr - (DesignTime ) EFD ICMS/IPI, EFD Contribuições, EFD Contábil - (http://www.projetoacbr.com.br/)'}
 {$DESIGNONLY}
 {$IMPLICITBUILD OFF}
 
@@ -35,6 +35,6 @@ requires
   ACBr_SPED;
 
 contains
-  ACBrSpedReg in '..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSpedReg.pas';
+  ACBrSpedReg in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrSPED\ACBrSpedReg.pas';
 
 end.

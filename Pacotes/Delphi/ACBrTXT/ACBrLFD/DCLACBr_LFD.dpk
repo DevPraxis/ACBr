@@ -1,6 +1,7 @@
 package DCLACBr_LFD;
 
 {$R *.res}
+{$R *.otares}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
@@ -25,7 +26,7 @@ package DCLACBr_LFD;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'ACBr - (design-time) Livro Fiscal Digital - (http://www.projetoacbr.com.br/)'}
+{$DESCRIPTION 'ACBr - (DesignTime) Livro Fiscal Digital - (http://www.projetoacbr.com.br/)'}
 {$DESIGNONLY}
 {$IMPLICITBUILD OFF}
 
@@ -34,6 +35,6 @@ requires
   ACBr_LFD;
 
 contains
-  ACBrLFDReg in '..\..\..\..\Fontes\ACBrTXT\ACBrLFD\ACBrLFDReg.pas';
+  ACBrLFDReg in '..\..\..\..\..\ACBr\Fontes\ACBrTXT\ACBrLFD\ACBrLFDReg.pas';
 
 end.

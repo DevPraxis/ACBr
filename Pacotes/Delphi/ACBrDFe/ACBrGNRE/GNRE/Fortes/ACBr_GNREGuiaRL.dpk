@@ -26,18 +26,19 @@ package ACBr_GNREGuiaRL;
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
 {$DESCRIPTION 'ACBr - GNRE Impressão em FortesReport - (http://www.projectoacbr.com.br/)'}
-{$RUNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl,
+  designide,
   dsnap,
   ACBr_GNRE,
   ACBrDFeReportRL;
 
 contains
-  ACBrGNReGuiaRL in '..\..\..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\GNRE\Fortes\ACBrGNReGuiaRL.pas',
-  ACBrGNReGuiaRLRetrato in '..\..\..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\GNRE\Fortes\ACBrGNReGuiaRLRetrato.pas',
-  ACBrGNReGuiaRLClass in '..\..\..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\GNRE\Fortes\ACBrGNReGuiaRLClass.pas';
+  ACBrGNREGuiaRLReg in '..\..\..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\GNRE\Fortes\ACBrGNREGuiaRLReg.pas',
+  ACBrGNReGuiaRL in '..\..\..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\GNRE\Fortes\ACBrGNReGuiaRL.pas',
+  ACBrGNReGuiaRLRetrato in '..\..\..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\GNRE\Fortes\ACBrGNReGuiaRLRetrato.pas',
+  ACBrGNReGuiaRLClass in '..\..\..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrGNRE\GNRE\Fortes\ACBrGNReGuiaRLClass.pas';
 
 end.

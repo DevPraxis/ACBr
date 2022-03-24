@@ -1,6 +1,8 @@
 package ACBr_synapse;
 
 {$R *.res}
+{$R '..\..\..\Fontes\ACBrComum\ACBrComum.dcr'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
 {$BOOLEVAL OFF}
@@ -11,17 +13,19 @@ package ACBr_synapse;
 {$LOCALSYMBOLS ON}
 {$LONGSTRINGS ON}
 {$OPENSTRINGS ON}
-{$OPTIMIZATION ON}
+{$OPTIMIZATION OFF}
 {$OVERFLOWCHECKS OFF}
 {$RANGECHECKS OFF}
 {$REFERENCEINFO ON}
 {$SAFEDIVIDE OFF}
-{$STACKFRAMES OFF}
+{$STACKFRAMES ON}
 {$TYPEDADDRESS OFF}
 {$VARSTRINGCHECKS ON}
 {$WRITEABLECONST OFF}
 {$MINENUMSIZE 1}
 {$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
 {$DESCRIPTION 'ACBr - Synapse TCP/IP / Serial library - (http://www.synapse.ararat.cz)'}
 {$RUNONLY}
 {$IMPLICITBUILD OFF}
@@ -49,6 +53,8 @@ contains
   smtpsend in '..\..\..\Fontes\Terceiros\synalist\smtpsend.pas',
   snmpsend in '..\..\..\Fontes\Terceiros\synalist\snmpsend.pas',
   sntpsend in '..\..\..\Fontes\Terceiros\synalist\sntpsend.pas',
+  ssl_openssl in '..\..\..\Fontes\Terceiros\synalist\ssl_openssl.pas',
+  ssl_openssl_lib in '..\..\..\Fontes\Terceiros\synalist\ssl_openssl_lib.pas',
   synachar in '..\..\..\Fontes\Terceiros\synalist\synachar.pas',
   synacode in '..\..\..\Fontes\Terceiros\synalist\synacode.pas',
   synacrypt in '..\..\..\Fontes\Terceiros\synalist\synacrypt.pas',
@@ -61,10 +67,6 @@ contains
   synautil in '..\..\..\Fontes\Terceiros\synalist\synautil.pas',
   synsock in '..\..\..\Fontes\Terceiros\synalist\synsock.pas',
   tlntsend in '..\..\..\Fontes\Terceiros\synalist\tlntsend.pas',
-  ssl_openssl in '..\..\..\Fontes\Terceiros\synalist\ssl_openssl.pas',
-  ssl_openssl_lib in '..\..\..\Fontes\Terceiros\synalist\ssl_openssl_lib.pas',
-  ssl_openssl_capi in '..\..\..\Fontes\Terceiros\synalist\ssl_openssl_capi.pas',
-  ssl_openssl11 in '..\..\..\Fontes\Terceiros\synalist\ssl_openssl11.pas',
-  ssl_openssl11_lib in '..\..\..\Fontes\Terceiros\synalist\ssl_openssl11_lib.pas';
+  GZIPUtils in '..\..\..\Fontes\Terceiros\GZIPUtils\GZIPUtils.pas';
 
 end.

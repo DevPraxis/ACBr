@@ -1,6 +1,7 @@
 package DCLACBr_BoletoFR;
 
 {$R *.res}
+{$R *.otares}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
@@ -25,17 +26,17 @@ package DCLACBr_BoletoFR;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'ACBr - (design-time) Boleto Impressão em  Fast Report - (http://www.projetoacbr.com.br/)'}
+{$DESCRIPTION 'ACBr - (DesignTime) Boleto Impressão em  FastReport - (http://www.projetoacbr.com.br/)'}
 {$DESIGNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl,
   ACBr_BoletoFR,
-  DCLACBr_Comum,
+  ACBr_Comum,
   designide;
 
 contains
-  ACBrBoletoFCFRReg in '..\..\..\..\..\Fontes\ACBrBoleto\FC\Fast\ACBrBoletoFCFRReg.pas';
+  ACBrBoletoFCFRReg in '..\..\..\..\..\..\ACBr\Fontes\ACBrBoleto\FC\Fast\ACBrBoletoFCFRReg.pas';
 
 end.

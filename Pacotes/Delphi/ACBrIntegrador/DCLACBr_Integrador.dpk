@@ -25,9 +25,9 @@ package DCLACBr_Integrador;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'ACBr - (design-time) Integrador - (http://www.projetoacbr.com.br/)'}
+{$DESCRIPTION 'ACBr - (DesignTime) Integrador - (http://www.projetoacbr.com.br/)'}
 {$DESIGNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl,
@@ -35,6 +35,6 @@ requires
   designide;
 
 contains
-  ACBrIntegradorReg in '..\..\..\Fontes\ACBrIntegrador\ACBrIntegradorReg.pas';
+  ACBrIntegradorReg in '..\..\..\..\ACBr\Fontes\ACBrIntegrador\ACBrIntegradorReg.pas';
 
 end.

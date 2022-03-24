@@ -1,14 +1,16 @@
 {******************************************************************************}
-{ Projeto: Componentes ACBr - ACBrCIOT                                         }
-{  Biblioteca multiplataforma de componentes Delphi para interação com equipa- }
-{ mentos de Automação Comercial utilizados no Brasil                           }
+{ Projeto: Componente ACBrCIOT                                                 }
+{  Biblioteca multiplataforma de componentes Delphi para emissão do CIOT       }
 {                                                                              }
-{ Direitos Autorais Reservados (c) 2020 Daniel Simoes de Almeida               }
+{ Direitos Autorais Reservados (c) 2017                                        }
 {                                                                              }
-{ Colaboradores nesse arquivo: Italo Jurisato Junior                           }
 {                                                                              }
-{  Você pode obter a última versão desse arquivo na pagina do  Projeto ACBr    }
-{ Componentes localizado em      http://www.sourceforge.net/projects/acbr      }
+{                                                                              }
+{ Colaboradores nesse arquivo:                                                 }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na pagina do Projeto ACBr     }
+{ Componentes localizado em http://www.sourceforge.net/projects/acbr           }
+{                                                                              }
 {                                                                              }
 {  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
 { sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
@@ -26,15 +28,22 @@
 { Você também pode obter uma copia da licença em:                              }
 { http://www.opensource.org/licenses/lgpl-license.php                          }
 {                                                                              }
-{ Daniel Simões de Almeida - daniel@projetoacbr.com.br - www.projetoacbr.com.br}
-{       Rua Coronel Aureliano de Camargo, 963 - Tatuí - SP - 18270-170         }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
 {******************************************************************************}
+
+{*******************************************************************************
+|* Historico
+|*
+*******************************************************************************}
 
 {$I ACBr.inc}
 
 package ACBr_CIOT;
 
 {$R *.res}
+{$R *.otares}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
@@ -60,27 +69,29 @@ package ACBr_CIOT;
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
 {$DESCRIPTION 'ACBr - CIOT - (http://www.projetoacbr.com.br/)'}
-{$RUNONLY}
 {$IMPLICITBUILD OFF}
 
 requires
   rtl,
   vcl,
+  designide,
   ACBr_DFeComum,
-  ACBr_PCNComum;
+  ACBr_PCNComum,
+  ACBr_Comum;
 
 contains
-  ACBrCIOT in '..\..\..\..\Fontes\ACBrDFe\ACBrCIOT\ACBrCIOT.pas',
-  ACBrCIOTConfiguracoes in '..\..\..\..\Fontes\ACBrDFe\ACBrCIOT\ACBrCIOTConfiguracoes.pas',
-  ACBrCIOTContratos in '..\..\..\..\Fontes\ACBrDFe\ACBrCIOT\ACBrCIOTContratos.pas',
-  ACBrCIOTWebServices in '..\..\..\..\Fontes\ACBrDFe\ACBrCIOT\ACBrCIOTWebServices.pas',
-  pcnCIOT in '..\..\..\..\Fontes\ACBrDFe\ACBrCIOT\PCNCIOT\pcnCIOT.pas',
-  pcnCIOTR in '..\..\..\..\Fontes\ACBrDFe\ACBrCIOT\PCNCIOT\pcnCIOTR.pas',
-  pcnCIOTW in '..\..\..\..\Fontes\ACBrDFe\ACBrCIOT\PCNCIOT\pcnCIOTW.pas',
-  pcnCIOTW_eFrete in '..\..\..\..\Fontes\ACBrDFe\ACBrCIOT\PCNCIOT\pcnCIOTW_eFrete.pas',
-  pcnCIOTW_REPOM in '..\..\..\..\Fontes\ACBrDFe\ACBrCIOT\PCNCIOT\pcnCIOTW_REPOM.pas',
-  pcnConversaoCIOT in '..\..\..\..\Fontes\ACBrDFe\ACBrCIOT\PCNCIOT\pcnConversaoCIOT.pas',
-  pcnRetEnvCIOT in '..\..\..\..\Fontes\ACBrDFe\ACBrCIOT\PCNCIOT\pcnRetEnvCIOT.pas',
-  pcnCIOTW_Pamcard in '..\..\..\..\Fontes\ACBrDFe\ACBrCIOT\PCNCIOT\pcnCIOTW_Pamcard.pas';
+  ACBrCIOT in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrCIOT\ACBrCIOT.pas',
+  ACBrCIOTConfiguracoes in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrCIOT\ACBrCIOTConfiguracoes.pas',
+  ACBrCIOTContratos in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrCIOT\ACBrCIOTContratos.pas',
+  ACBrCIOTReg in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrCIOT\ACBrCIOTReg.pas',
+  ACBrCIOTWebServices in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrCIOT\ACBrCIOTWebServices.pas',
+  pcnCIOT in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrCIOT\PCNCIOT\pcnCIOT.pas',
+  pcnCIOTR in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrCIOT\PCNCIOT\pcnCIOTR.pas',
+  pcnCIOTW in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrCIOT\PCNCIOT\pcnCIOTW.pas',
+  pcnCIOTW_eFrete in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrCIOT\PCNCIOT\pcnCIOTW_eFrete.pas',
+  pcnCIOTW_REPOM in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrCIOT\PCNCIOT\pcnCIOTW_REPOM.pas',
+  pcnConversaoCIOT in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrCIOT\PCNCIOT\pcnConversaoCIOT.pas',
+  pcnRetEnvCIOT in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrCIOT\PCNCIOT\pcnRetEnvCIOT.pas',
+  pcnCIOTW_Pamcard in '..\..\..\..\..\ACBr\Fontes\ACBrDFe\ACBrCIOT\PCNCIOT\pcnCIOTW_Pamcard.pas';
 
 end.
