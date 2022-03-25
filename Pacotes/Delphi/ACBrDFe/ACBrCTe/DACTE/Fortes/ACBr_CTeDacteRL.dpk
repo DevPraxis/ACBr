@@ -72,7 +72,7 @@ package ACBr_CTeDacteRL;
 requires
   rtl,
   dsnap,
-  FrceRT,
+  frce,
   ACBr_CTe,
   ACBr_DFeReportRL;
 

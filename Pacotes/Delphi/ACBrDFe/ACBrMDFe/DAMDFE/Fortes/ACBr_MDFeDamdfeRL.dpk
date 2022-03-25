@@ -69,7 +69,7 @@ requires
   dsnap,
   ACBr_MDFe,
   ACBr_DFeReportRL,
-  FrceRT;
+  frce;
 
 contains
   ACBrMDFeDAMDFeRLClass in '..\..\..\..\..\..\Fontes\ACBrDFe\ACBrMDFe\DAMDFE\Fortes\ACBrMDFeDAMDFeRLClass.pas',

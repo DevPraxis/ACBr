@@ -35,7 +35,7 @@ requires
   ACBr_DFeComum,
   vcldb,
   vclimg,
-  FrceRT;
+  frce;
 
 contains
   ACBrDFeReportFortes in '..\..\..\Fontes\ACBrDFe\ACBrDFeReportFortes.pas';
